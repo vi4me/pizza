@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Real</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <row>
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand">
+              <img src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+              <span class="navbar-toggler-icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navi">
+              <ul class="navbar-nav ml-left">
+                <li class="nav-item">
+                  <a href="#" class="nav-link btn-seemore">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link btn-seemore">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link btn-seemore">Testimonals</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link btn-seemore">Contacts</a>
+                </li>
+              </ul>
+              <ul class="list-inline social-icons-header">
+                <li class="list-inline-item">
+                  <a href="">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </row>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="banner-inner">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum non ipsa alias unde consequuntur, blanditiis, ratione dolore? Natus ipsum similique, beatae quas itaque, possimus perspiciatis repudiandae nisi maxime? Enim ea maxime cumque, qui dolorem, blanditiis nemo officiis officia beatae id.</p>
+          <!-- <a href="#" class="btn-seemore">See More</a> -->
+        </div>
+      </div>
+      <div class="col-sm-4 d-flex align-items-end justify-content-center">
+        <div class="big-box">
+          <img class="left" src="img/pizza.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4 text-right">
+        <div class="banner-inner">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex unde, atque! Hic laudantium, accusamus dolores dolorum necessitatibus magni rerum magnam id. Tempora veritatis eos, dolor incidunt? Numquam sapiente dolor quasi eligendi libero velit necessitatibus earum et, nesciunt obcaecati quia!</p>
+          <!-- <a href="#" class="btn-seemore">See More</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="bg"></div>
+  </div>
+
+  <div class="box-main-wrapper">
+    <div id="1b" class="bgcolor-1">
+      <div class="box">
+        <img class="left" src="img/pizza.png" alt=""></div>
+    </div>
+    <div id="2b" class="bgcolor-2">
+      <div class="box">
+        <img class="right" src="img/pizza-right.png" alt=""></div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#1b').hover(function(){
+        $('#2b').addClass('blur');
+      }, function(){
+        $('#2b').removeClass('blur');
+      });
+
+      $('#2b').hover(function(){
+        $('#1b').addClass('blur');
+      }, function(){
+        $('#1b').removeClass('blur');
+      });
+    });
+
+  </script>
+</body>
+</html>
