@@ -54,13 +54,13 @@ button.navbar-toggler:focus {
 }
 .social-icons-header {
   position: absolute;
-  right: 55px;
-  top: 26px;
+  right: 0%;
+  top: 25%;
   transition: all ease 1s;
 }
 .banner-inner h2 {
   color: #150025;
-  margin-top: 230px;
+  margin-top: 150px;
   margin-bottom: -170px;
 }
 .banner-inner p {
@@ -164,6 +164,9 @@ button.navbar-toggler:focus {
   }
 }
 @media (max-width: 1200px) {
+  .banner-inner h2 {
+    margin-top: 100px;
+  }
   .big-box img {
     width: 450px;
     text-align: center;
@@ -178,19 +181,24 @@ button.navbar-toggler:focus {
     width: 400px;
   }
 }
-@media (max-width: 1000px) {
-  .big-box img {
-    opacity: 0.5;
-  }
-}
 @media (max-width: 780px) {
   a.btn-seemore {
     padding: 15px 15px;
     border-radius: 10px;
-
   }
+  .big-box img {
+    width: 350px;
 }
 @media (max-width: 580px) {
+  .navbar-brand {
+    width: 150px;
+  }
+  .navbar-toggler {
+    padding-right: 0px;
+  }
+  .banner-inner h2 {
+    margin-top: 30px;
+  }
   .text-right h2 {
     margin: 0;
   }
